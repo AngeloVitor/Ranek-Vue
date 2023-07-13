@@ -2,6 +2,8 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Produto from '../views/ProdutoId.vue'
+import Login from '../views/LoginUser.vue'
+import Usuario from '../views/usuario/UsuarioId.vue'
 
 Vue.use(VueRouter)
 
@@ -17,6 +19,17 @@ const routes = [
     component: Produto,
     props: true
   },
+   {
+    path: '/login',
+    name: 'login',
+    component: Login
+  },
+  {
+    path: '/usuario',
+    name: 'usuario',
+    component: Usuario
+  },
+
 ]
 
 // scrollBehavior() {
